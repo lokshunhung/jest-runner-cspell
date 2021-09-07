@@ -1,13 +1,15 @@
 {
     "compilerOptions": {
-        "target": "ES2015",
+        "target": "ES2017",
         "lib": ["ESNext"],
         "module": "CommonJS",
-        "declaration": true,
-        "sourceMap": true,
+        // "declaration": true,
+        // "sourceMap": true,
+        "rootDir": "src",
+        "outDir": "dist",
         "importsNotUsedAsValues": "error",
-        // "allowSyntheticDefaultImports": true,             ,
-        // "esModuleInterop": true,                             ,
+        // "allowSyntheticDefaultImports": true,
+        // "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,
         "noUnusedLocals": true,
@@ -19,5 +21,6 @@
         "noPropertyAccessFromIndexSignature": true,
         "skipLibCheck": true
     },
+    "include": ["src"],
     "exclude": ["node_modules", "dist"]
 }

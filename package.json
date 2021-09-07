@@ -4,10 +4,11 @@
     "description": "A generated jest runner",
     "main": "src/index.js",
     "scripts": {
+        "build": "tsc",
         "test": "jest"
     },
     "jest": {
-        "runner": "./test/runner"
+        "runner": "./dist/index"
     },
     "dependencies": {
         "create-jest-runner": "^0.9.0"
@@ -16,5 +17,8 @@
         "jest": "^27.1.0",
         "prettier": "^2.3.2",
         "typescript": "^4.4.2"
+    },
+    "peerDependencies": {
+        "cspell": "^5.9.0"
     }
 }
